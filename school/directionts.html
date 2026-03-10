@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Направления — Школа танцев «Ритм»</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Тот же хедер, ссылки active на directions.html -->
+  <header class="border-bottom bg-body sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-2">
+        <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="index.html">
+          <span class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary text-white" style="width:36px;height:36px;"><i class="bi bi-music-note-beamed"></i></span>
+          Ритм
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link active" href="directions.html">Направления</a></li>
+            <li class="nav-item"><a class="nav-link" href="schedule.html">Расписание</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="d-flex ms-lg-3 mt-3 mt-lg-0 gap-2">
+            <a class="btn btn-outline-primary" href="index.html#trial">Пробный урок</a>
+            <a class="btn btn-primary" href="contacts.html#booking">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="fw-semibold mb-4">Направления танцев</h1>
+
+      <!-- Аккордеон для группировки по стилям -->
+      <div class="accordion mb-5" id="directionsAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Классические (бальные) танцы
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#directionsAccordion">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Европейская программа</h5>
+                      <p class="card-text">Медленный вальс, танго, венский вальс, фокстрот, квикстеп</p>
+                      <span class="badge bg-primary">Парные</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Латиноамериканская программа</h5>
+                      <p class="card-text">Самба, ча-ча-ча, румба, пасодобль, джайв</p>
+                      <span class="badge bg-primary">Парные</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Современные стили
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#directionsAccordion">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/images/hiphop.jpg" class="card-img-top" alt="Хип-хоп">
+                    <div class="card-body">
+                      <h5 class="card-title">Хип-хоп</h5>
+                      <p class="card-text">Базовые движения, кач, фристайл</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/images/contemporary.jpg" class="card-img-top" alt="Contemporary">
+                    <div class="card-body">
+                      <h5 class="card-title">Contemporary</h5>
+                      <p class="card-text">Импровизация, работа с полом</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="assets/images/jazzmodern.jpg" class="card-img-top" alt="Jazz-modern">
+                    <div class="card-body">
+                      <h5 class="card-title">Jazz-modern</h5>
+                      <p class="card-text">Джазовая техника, растяжка</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Фитнес-танцы
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#directionsAccordion">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item">Zumba Fitness</li>
+                <li class="list-group-item">Lady style / High Heels</li>
+                <li class="list-group-item">Стретчинг</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточки преподавателей -->
+      <h2 class="fw-semibold mb-3">Наши преподаватели</h2>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card text-center h-100">
+            <img src="assets/images/anna.jpg" class="card-img-top rounded-circle p-3" alt="Анна Смирнова">
+            <div class="card-body">
+              <h5 class="card-title">Анна Смирнова</h5>
+              <p class="card-text text-body-secondary">Бальные танцы, МС, стаж 8 лет</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card text-center h-100">
+            <img src="assets/images/dmitry.jpg" class="card-img-top rounded-circle p-3" alt="Дмитрий Козлов">
+            <div class="card-body">
+              <h5 class="card-title">Дмитрий Козлов</h5>
+              <p class="card-text text-body-secondary">Хип-хоп, танцор команды KREW</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card text-center h-100">
+            <img src="assets/images/maria.jpg" class="card-img-top rounded-circle p-3" alt="Мария Петрова">
+            <div class="card-body">
+              <h5 class="card-title">Мария Петрова</h5>
+              <p class="card-text text-body-secondary">Contemporary, хореограф театра</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card text-center h-100">
+            <img src="assets/images/elena.jpg" class="card-img-top rounded-circle p-3" alt="Елена Мороз">
+            <div class="card-body">
+              <h5 class="card-title">Елена Мороз</h5>
+              <p class="card-text text-body-secondary">Zumba, сертифицированный тренер</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (аналогично главной) -->
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-md-between align-items-md-center gap-2">
+      <div class="text-body-secondary">© 2026 Школа танцев «Ритм»</div>
+      <div class="d-flex gap-3">
+        <a class="link-secondary text-decoration-none" href="index.html#top">Наверх</a>
+        <a class="link-secondary text-decoration-none" href="contacts.html">Контакты</a>
+        <a class="link-secondary text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Политика</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно политики (можно вынести в отдельный файл) -->
+  <div class="modal fade" id="privacyModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Политика конфиденциальности</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Мы не передаём ваши данные третьим лицам. Информация используется только для связи по вашему запросу.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
