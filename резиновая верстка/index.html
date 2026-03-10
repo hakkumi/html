@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студенческий IT-клуб — Резиновая вёрстка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="hero">
+        <h1>Студенческий IT-клуб</h1>
+        <p>Развивайся в IT вместе с единомышленниками. Участвуй в проектах, хакатонах и воркшопах.</p>
+        <a href="#join" class="button">Вступить в клуб</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="#about">О клубе</a></li>
+        <li><a href="#directions">Направления</a></li>
+        <li><a href="#join">Вступить</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="container">
+      
+      <!-- ДВУХКОЛОНОЧНЫЙ БЛОК -->
+      <section id="about" class="section">
+        <div class="two-col">
+          <article class="main-content">
+            <h2>О клубе</h2>
+            <p>Мы — сообщество студентов, увлечённых программированием, дизайном и технологиями. Еженедельно проводим встречи, разбираем код, работаем над открытыми проектами и готовимся к стажировкам.</p>
+            <p>В клубе действуют наставники из индустрии, а также доступ к базе знаний и записям лекций.</p>
+          </article>
+          <aside class="sidebar">
+            <h3>Ближайшие события</h3>
+            <ul>
+              <li>🔹 15.03 — Воркшоп по CSS Grid</li>
+              <li>🔹 22.03 — Разбор алгоритмов</li>
+              <li>🔹 29.03 — Хакатон «Веб-интерфейсы»</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- СЕТКА КАРТОЧЕК (МИНИМУМ 6) -->
+      <section id="directions" class="section">
+        <h2>Направления</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Веб-разработка</h3>
+            <p>HTML, CSS, JavaScript, React, Node.js</p>
+          </article>
+          <article class="card">
+            <h3>Мобильная разработка</h3>
+            <p>Kotlin, Swift, Flutter, React Native</p>
+          </article>
+          <article class="card">
+            <h3>Дизайн интерфейсов</h3>
+            <p>Figma, UI/UX, прототипирование</p>
+          </article>
+          <article class="card">
+            <h3>Алгоритмы и структуры</h3>
+            <p>Собеседования, олимпиады, Codeforces</p>
+          </article>
+          <article class="card">
+            <h3>Базы данных</h3>
+            <p>SQL, PostgreSQL, MongoDB, Prisma</p>
+          </article>
+          <article class="card">
+            <h3>DevOps</h3>
+            <p>Docker, CI/CD, Linux, сети</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ФОРМА ВСТУПЛЕНИЯ -->
+      <section id="join" class="section">
+        <h2>Вступить в клуб</h2>
+        <form class="join-form">
+          <div class="form-group">
+            <label for="name">Имя и фамилия</label>
+            <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="student@university.ru" required>
+          </div>
+          <div class="form-group">
+            <label for="role">Направление</label>
+            <select id="role" name="role">
+              <option value="">— Выберите —</option>
+              <option>Веб-разработка</option>
+              <option>Мобильная разработка</option>
+              <option>Дизайн</option>
+              <option>Алгоритмы</option>
+              <option>Базы данных</option>
+              <option>DevOps</option>
+            </select>
+          </div>
+          <div class="form-group checkbox">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">Я хочу получать новости клуба</label>
+          </div>
+          <button type="submit" class="button">Отправить заявку</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026. Студенческий IT-клуб · Выполнено в рамках практической работы</p>
+    </div>
+  </footer>
+</body>
+</html>
