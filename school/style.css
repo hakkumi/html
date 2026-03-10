@@ -1,0 +1,24 @@
+/* style.css — минимальные кастомные стили */
+.hero{
+  background: radial-gradient(1200px circle at 20% 10%, rgba(91,91,214,.18), transparent 55%),
+              radial-gradient(1000px circle at 80% 20%, rgba(25,135,84,.14), transparent 50%),
+              radial-gradient(900px circle at 60% 80%, rgba(13,110,253,.14), transparent 55%);
+}
+
+/* Коррекция отступов для мобильных */
+@media (max-width: 575.98px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+}
+
+/* Для карточек преподавателей */
+.card-img-top.rounded-circle {
+  max-width: 150px;
+  margin: 1rem auto 0;
+}
+
+/* Адаптивные отступы */
+section {
+  overflow-x: hidden;
+}
